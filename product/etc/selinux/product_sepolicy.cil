@@ -1,0 +1,3 @@
+(allow system_server smartpower_service (service_manager (add find)))
+(allow untrusted_app_all smartpower_service (service_manager (find)))
+

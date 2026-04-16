@@ -1,0 +1,98 @@
+{
+  "localId": "9caa2571-ddaf-4462-b649-3a26002bbb67",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "89a1651fd33fa5bbfe873334ea296ad2fdcc84b5",
+  "platform": 17,
+  "size": 2340975,
+  "updatedTime": 0,
+  "version": "1.7",
+  "authors": {
+    "fallback": "Xiaomi Themes"
+  },
+  "designers": {
+    "fallback": "Xiaomi Themes"
+  },
+  "titles": {
+    "it_IT": "Tema POCO X8 Pro Iron Man Edition",
+    "pl_PL": "POCO X8 Pro Motyw Ironman",
+    "tr_TR": "POCO X8 Pro Iron Man Özel Sürümü",
+    "en_PH": "POCO X8 Pro Ironman Edition Theme",
+    "th_TH": "ธีม POCO X8 Pro Ironman Edition",
+    "fr_FR": "POCO X8 Pro Thème Édition Iron Man",
+    "ja_JP": "POCO X8 Pro アイアンマンエディション版",
+    "in_ID": "POCO X8 Pro Ironman Edition Theme",
+    "de_DE": "POCO X8 Pro Ironman Edition Theme",
+    "ms_MY": "POCO X8 Pro Ironman Edition Theme",
+    "en_GB": "POCO X8 Pro Ironman Edition Theme",
+    "zh_HK": "POCO X8 Pro Ironman 限定版 深度定制主題",
+    "zh_TW": "POCO X8 Pro 鋼鐵人定製款 主題",
+    "en_US": "POCO X8 Pro Ironman Edition Theme",
+    "es_MX": "Tema POCO X8 Pro Ironman Edition ",
+    "es_ES": "POCO X8 Pro Ironman Edition Theme",
+    "fallback": "POCO X8 Pro Ironman Edition Theme"
+  },
+  "descriptions": {
+    "it_IT": "Ispirato alla leggendaria Stark Industries, questo tema trasforma il tuo dispositivo in un capolavoro dal carattere deciso e futuristico. Linee meccaniche, metalli lucenti e giochi di luce dinamici si fondono in una combinazione di nero e oro che richiama l’inconfondibile stile di Iron Man. Un design potente, audace e intriso di tecnologia avanzata.",
+    "pl_PL": "Inspirowany Stark Industries projekt łączy klasyczny styl Iron Mana z odważnym wyglądem inspirowanym mechaniką. Dzięki niesamowitemu połączeniu błyszczących metali, dynamicznego oświetlenia i eleganckich czarno-złotych kolorów, całość emanuje futurystycznym klimatem high-tech.",
+    "tr_TR": "Yüksek teknoloji dünyasından ilham alan bu tasarım, Iron Man ruhunu cesur ve mekanik esintili bir görünüme taşıyor. Parlak metal dokular, dinamik ışık efektleri ve siyah-altın renklerin şık birleşimiyle yüksek teknolojiyi ve geleceği yansıtıyor.",
+    "en_PH": "Inspired by Stark Industries, this design brings the classic Iron Man vibe into a bold, mech-inspired look. With a cool mix of shiny metals, dynamic lighting, and sleek black-and-gold colors, it's all about that high-tech, futuristic feel.",
+    "th_TH": "ได้แรงบันดาลใจจาก Stark Industries ดีไซน์นี้ถ่ายทอดเสน่ห์คลาสสิกของ Iron Man สู่ลุคใหม่ที่โดดเด่นในดีไซน์หุ่นยนต์สุดล้ำ ผสานความแวววาวของโลหะ แสงไฟสุดล้ำพร้อมโทนสีดำและทองอันหรูหรา ถ่ายทอดความรู้สึกแห่งเทคโนโลยีล้ำยุคและพลังแห่งอนาคตอย่างแท้จริง",
+    "fr_FR": "Inspiré par Stark Industries, ce design apporte la touche classique d’Iron Man dans un style audacieux, inspiré des méchas. Avec un mélange élégant de métaux brillants, d’éclairages dynamiques et de couleurs noir et or raffinées, il évoque pleinement une atmosphère high-tech et futuriste.",
+    "ja_JP": "スターク・インダストリーズから着想を得たこのデザインは、アイアンマンのクラシックなオーラを大胆でメカニカルな外観に融合させています。光沢感のあるメタル素材、ダイナミックなライティング、そして洗練されたブラックとゴールドのカラーがクールに融合し、ハイテクで近未来感あるイメージを醸し出しています。",
+    "in_ID": "Terinspirasi oleh Stark Industries, desain ini menghadirkan nuansa Iron Man klasik ke dalam tampilan mekanis yang berani. Dengan perpaduan mengagumkan antara logam mengilap, pencahayaan dinamis, serta kombinasi hitam dan emas yang elegan, semua terasa futuristik dan berteknologi tinggi.",
+    "de_DE": "Inspiriert von Stark Industries, bringt dieses Design die klassische Iron-Man-Atmosphäre in einen kühnen, mech-inspirierten Look. Mit einer coolen Mischung aus glänzenden Metallen, dynamischer Beleuchtung und eleganten Schwarz-Gold-Farben steht es ganz im Zeichen des futuristischen Hightech-Gefühls.",
+    "ms_MY": "Diinspirasikan oleh Stark Industries, rekaan ini menampilkan gaya klasik Iron Man dalam sentuhan berani bertemakan mecha. Dengan gabungan menarik antara logam berkilau, pencahayaan dinamik, serta warna hitam dan emas yang bergaya, ia menyerlahkan aura teknologi tinggi dan nuansa futuristik.",
+    "en_GB": "Inspired by Stark Industries, this design brings the classic Iron Man vibe into a bold, mech-inspired look. With a cool mix of shiny metals, dynamic lighting, and sleek black-and-gold colours, it's all about that high-tech, futuristic feel.",
+    "zh_HK": "以“Stark Industries”為靈感，POCO X9 Pro Ironman 限定版 深度定制主題融入經典Ironman元素，打造硬朗機甲風設計，展現科技與工業美學。透過金屬質感、動態光效及黑金配色，營造沉浸式的未來感體驗，喚醒專屬英雄氣質。",
+    "zh_TW": "這款設計靈感源自史塔克工業，將經典的鋼鐵人風格融入大膽的機甲元素。閃亮的金屬材質、動感的燈光效果以及時尚的黑金配色，完美詮釋了高科技的未來感。",
+    "en_US": "Inspired by Stark Industries, this design brings the classic Iron Man vibe into a bold, mech-inspired look. With a cool mix of shiny metals, dynamic lighting, and sleek black-and-gold colors, it's all about that high-tech, futuristic feel.",
+    "es_MX": "Inspirado en las Stark Industries, este diseño lleva la esencia clásica de Iron Man a un look imponente con un diseño inspirado en la tecnología y mecánica. Una mezcla de metales brillantes, iluminación dinámica y un estilo negro con dorado que brinda una sensación de alta tecnología con aire futurista.",
+    "es_ES": "Inspirado en Stark Industries, este diseño aporta el clásico estilo de Iron Man a un aspecto atrevido e inspirado en la mecánica. Con una atractiva combinación de metales brillantes, iluminación dinámica y elegantes colores negro y dorado, todo gira en torno a esa sensación futurista y de alta tecnología.",
+    "fallback": "Inspired by Stark Industries, this design brings the classic Iron Man vibe into a bold, mech-inspired look. With a cool mix of shiny metals, dynamic lighting, and sleek black-and-gold colors, it's all about that high-tech, futuristic feel."
+  },
+  "builtInThumbnails": {
+    "en_US": [
+      "en_US_lockscreen_0.jpg"
+    ],
+    "fallback": [
+      "preview_lockscreen_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "en_US": [
+      "en_US_lockscreen_0.jpg"
+    ],
+    "fallback": [
+      "preview_lockscreen_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "21cddc05-b8b5-4956-b096-8454a2ef0bd1",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null,
+  "supportHomeSearchBar": false,
+  "packageVersion": null,
+  "packageName": null,
+  "officialIcons": false,
+  "iconsCount": null,
+  "fontWeight": null,
+  "price": -1,
+  "isBackUpVersion": false,
+  "themeType": 0,
+  "miuiAdapterVersion": "3.2"
+}

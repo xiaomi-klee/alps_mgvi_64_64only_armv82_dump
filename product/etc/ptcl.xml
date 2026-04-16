@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cptl_groups>
+    <close_package name="com.tencent.tmgp.sgame" />
+    <close_package name="com.tencent.tmgp.pubgmhd" />
+    <close_package name="com.miHoYo.Yuanshen" />
+    <close_package name="com.miHoYo.hkrpg" />
+    <close_package name="com.tencent.jkchess" />
+    <close_package name="com.tencent.lolm" />
+    <close_package name="com.tencent.KiHan" />
+    <close_package name="com.tencent.tmgp.dfm" />
+    <close_package name="com.tencent.tmgp.cf" />
+    <close_package name="com.tencent.tmgp.speedmobile" />
+</cptl_groups>

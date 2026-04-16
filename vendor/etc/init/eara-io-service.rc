@@ -1,0 +1,30 @@
+on post-fs-data
+    mkdir /data/vendor/eara_io 0770 system system
+    chown system system /proc/blocktag/eara_io_boost
+    chmod 666 /sys/devices/platform/soc/16810000.ufshci/clkscale/clkscale_control
+    chown system system /sys/devices/platform/soc/16810000.ufshci/clkscale/clkscale_control
+    chmod 666 /sys/devices/platform/soc/112b0000.ufshci/clkscale/clkscale_control
+    chown system system /sys/devices/platform/soc/112b0000.ufshci/clkscale/clkscale_control
+    chown system system /sys/devices/platform/soc/16810000.ufshci/skip_blocktag
+    chmod 666 /sys/devices/platform/soc/16810000.ufshci/skip_blocktag
+    chown system system /proc/blocktag/earaio_ctrl
+    chmod 666 /proc/blocktag/earaio_ctrl
+
+on property:sys.boot_completed=1
+    setprop vendor.eara_io.enable 0
+
+service eara-io /vendor/bin/eara_io_service
+    class main
+    user root
+    group system
+
+on property:vendor.eara_io.enable=1
+    write /proc/blocktag/earaio_ctrl 1
+    write /sys/devices/platform/soc/16810000.ufshci/skip_blocktag 0
+    start eara-io
+
+on property:vendor.eara_io.enable=0
+    write /proc/blocktag/earaio_ctrl 0
+    write /sys/devices/platform/soc/16810000.ufshci/skip_blocktag 1
+    stop eara-io
+

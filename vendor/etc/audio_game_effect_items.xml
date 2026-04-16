@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+    <!-- Version information -->
+    <version>3.1.20250910</version>
+
+    <!--
+        List of ALL packages which support AudioGameEffect.
+        Each package has AudioGameEffect parameters for headset and/or speaker.
+        For param item, four numbers represent: [FpsOpLowFreqBoost]-[FpsOpVocalBoost]-[FpsOpFootStepBoost]-[FpsOpSoundFieldBoost].
+        [0, 100] represents the degree of voice enhancement (effectLevel)
+        The third number represents gameType: 1 for FPS/shooting games, 2 for music/other games
+    -->
+
+    <!-- Games that work on both headset and speaker -->
+    <package name="com.tencent.tmgp.pubgmhd"> <!-- 和平精英 -->
+        <device name="headset" param="0-100-1-0"/>
+        <device name="speaker" param="0-100-1-0"/>
+    </package>
+    <package name="com.tencent.tmgp.sgame"> <!-- 王者荣耀 -->
+        <device name="headset" param="0-100-2-0"/>
+        <device name="speaker" param="0-100-2-0"/>
+    </package>
+    <package name="com.ngame.allstar.eu"> <!-- 王者荣耀国际版 -->
+        <device name="headset" param="0-100-2-0"/>
+        <device name="speaker" param="0-100-2-0"/>
+    </package>
+    <package name="com.mobile.legends"> <!-- Mobile Legends: Bang Bang -->
+        <device name="headset" param="0-100-2-0"/>
+        <device name="speaker" param="0-100-2-0"/>
+    </package>
+    <package name="com.tencent.jkchess"> <!-- 金铲铲之战 -->
+        <device name="headset" param="0-100-2-0"/>
+        <device name="speaker" param="0-100-2-0"/>
+    </package>
+    <package name="com.tencent.KiHan"> <!-- 火影忍者 -->
+        <device name="headset" param="0-100-2-0"/>
+        <device name="speaker" param="0-100-2-0"/>
+    </package>
+
+    <!-- Games that work only on headset -->
+    <package name="com.tencent.tmgp.cf"> <!-- 穿越火线 -->
+        <device name="headset" param="0-100-1-0"/>
+    </package>
+    <package name="com.tencent.toaa"> <!-- 黎明觉醒 -->
+        <device name="headset" param="0-100-1-0"/>
+    </package>
+    <package name="com.tencent.tmgp.cod"> <!-- 使命召唤 -->
+        <device name="headset" param="0-100-1-0"/>
+    </package>
+    <package name="com.tencent.ig"> <!-- PUBG Mobile国际版 -->
+        <device name="headset" param="0-100-1-0"/>
+    </package>
+    <package name="com.rekoo.pubgm"> <!-- PUBG Mobile -->
+        <device name="headset" param="0-100-1-0"/>
+    </package>
+    <package name="com.activision.callofduty.shooter"> <!-- 使命召唤手游国际版 -->
+        <device name="headset" param="0-100-1-0"/>
+    </package>
+    <package name="com.tencent.mf.uam"> <!-- 暗区突围 -->
+        <device name="headset" param="0-100-1-0"/>
+    </package>
+    <package name="com.tencent.tmgp.codev"> <!-- 无畏契约 -->
+        <device name="headset" param="0-100-1-0"/>
+    </package>
+    <package name="com.miHoYo.Yuanshen"> <!-- 原神 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.miHoYo.GenshinImpact"> <!-- 原神国际版 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.miHoYo.cloudgames.ys"> <!-- 原神云游戏 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.miHoYo.hkrpg"> <!-- 崩坏：星穹铁道 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.miHoYo.hkrpg.bilibili"> <!-- 崩坏：星穹铁道B站版 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.miHoYo.cloudgames.hkrpg"> <!-- 崩坏：星穹铁道云游戏 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.HoYoverse.hkrpgoversea"> <!-- 崩坏：星穹铁道国际版 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.miHoYo.Nap"> <!-- 绝区零 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.miHoYo.cloudgames.Nap"> <!-- 绝区零云游戏 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.HoYoverse.Nap.kbinstaller"> <!-- 绝区零国际版 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.outfit7.mytalkingtomfree"> <!-- 会说话的汤姆猫 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.netease.party.mi"> <!-- 蛋仔派对 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.kiloo.subwaysurf"> <!-- 地铁跑酷 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.tencent.lolm"> <!-- 英雄联盟手游 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.tencent.tmgp.supercell.clashofclans"> <!-- 部落冲突 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.netease.mc.mi"> <!-- 我的世界移动版 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+    <package name="com.kurogame.mingchao"> <!-- 鸣潮 -->
+        <device name="headset" param="0-100-2-0"/>
+    </package>
+
+    <!-- Games that work only on speaker -->
+    <package name="com.dts.freefireth"> <!-- Free Fire -->
+        <device name="speaker" param="0-100-1-0"/>
+    </package>
+    <package name="com.tencent.tmgp.dfm"> <!-- 三角洲行动 -->
+        <device name="speaker" param="0-100-1-0"/>
+    </package>
+    <package name="com.tencent.tmgp.speedmobile"> <!-- QQ飞车手游 -->
+        <device name="speaker" param="0-100-2-0"/>
+    </package>
+</packages>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<audio_thread_sched>
+    <thread_map>
+        <thread name="ApmAudio" sched_type="APM_AUDIO"/>
+        <thread name="ApmOutput" sched_type="APM_OUTPUT"/>
+        <thread name="Spatializer-loo" sched_type="APM_SPATIALIZERLOOPER"/>
+        <thread name="FastMixer" sched_type="AF_OUTPUT_FLAG_FAST"/>
+        <thread name="write_0x8" sched_type="AF_OUTPUT_FLAG_DEEP_BUFFER"/>
+        <thread name="MiSoundV2" sched_type="AF_OUTPUT_FLAG_DEEP_BUFFER"/>
+        <thread name="Music" sched_type="AF_OUTPUT_FLAG_DEEP_BUFFER"/>
+        <thread name="Dolby" sched_type="AF_OUTPUT_FLAG_DEEP_BUFFER"/>
+        <thread name="DAPV2" sched_type="AF_OUTPUT_FLAG_DEEP_BUFFER"/>
+        <thread name="write_0x4" sched_type="AF_OUTPUT_FLAG_FAST"/>
+        <thread name="write_0x2" sched_type="AF_OUTPUT_FLAG_PRIMARY"/>
+        <thread name="miSpatializerV" sched_type="AF_OUTPUT_FLAG_SPATIALIZER"/>
+        <thread name="write_0x40000" sched_type="AF_OUTPUT_FLAG_SPATIALIZER"/>
+    </thread_map>
+    <PerformanceLevels>
+        <!-- 系统CPU核心数 -->
+        <CPUCores>8</CPUCores>
+        <!-- 高性能调度级别 - 3中 -->
+        <Level id="SCHED_LEVEL_HIGH">
+                <PerfLock duration="-1" lvl="2">
+                <!-- 绑核 -->
+                        <Plkmsg type="SCHED_CPU_AFFINITY" opcode="0x00000000" value="0xFE" />
+                        <!-- 优先级 -->
+                        <Plkmsg type="SCHED_CPU_PRIORITY" opcode="0x01450000" value="96" />
+                </PerfLock>
+        </Level>
+        <!-- 中等性能调度级别 - 2中4小 -->
+        <Level id="SCHED_LEVEL_MIDDLE">
+                <PerfLock duration="-1" lvl="2">
+                        <!-- 绑核 -->
+                        <Plkmsg type="SCHED_CPU_AFFINITY" opcode="0x00000000" value="0x3F" />
+                        <!-- 优先级 -->
+                        <Plkmsg type="SCHED_CPU_PRIORITY" opcode="0x01450000" value="96" />
+                </PerfLock>
+        </Level>
+        <!-- 低性能调度级别 - 4小 -->
+        <Level id="SCHED_LEVEL_LOW">
+                <PerfLock duration="-1" lvl="2">
+                        <!-- 绑核 -->
+                        <Plkmsg type="SCHED_CPU_AFFINITY" opcode="0x00000000" value="0xF" />
+                        <!-- 优先级 -->
+                        <Plkmsg type="SCHED_CPU_PRIORITY" opcode="0x01450000" value="96" />
+                </PerfLock>
+        </Level>
+        <!-- 系统默认调度级别 - 1大3中4小 -->
+        <Level id="SCHED_LEVEL_SYSTEMDEFAULT">
+                <PerfLock duration="-1" lvl="2">
+                        <!-- 绑核 -->
+                        <Plkmsg type="SCHED_CPU_AFFINITY" opcode="0x00000000" value="0xFF" />
+                        <!-- 优先级 -->
+                        <Plkmsg type="SCHED_CPU_PRIORITY" opcode="0x01450000" value="96" />
+                </PerfLock>
+        </Level>
+        <Level id="AUDIO_SCENE_LOW_LATENCY_RING_ACTIVE">
+            <PerfLock duration="-1" lvl="3">
+            <!-- OpCode: 短时拉取部分3，4核心增加容错 -->
+            <Plkmsg type="MPCTLV3_MIN_ONLINE_CPU_CLUSTER_BIG" opcode="0x41000000" value="6" />
+            <!-- OpCode: 影响cfs任务设置mvp -->
+            <Plkmsg type="MPCTLV3_SCHED_LOW_LATENCY" opcode="0x40CD0000" value="0" />
+            <!-- 针对cfs进程，配置wakeup_idle的任务唤醒时会优先选择idle的cpu放置 -->
+            <Plkmsg type="MPCTLV3_SCHED_WAKE_UP_IDLE" opcode="0x40CF0000" value="0" />
+            </PerfLock>
+        </Level>
+      <!--
+        <Level id="AUDIO_SCENE_HIGH_LOADING_FORFREQ">
+            <PerfLock duration="-1" lvl="1">
+              <Plkmsg type="SCHED_CPU_FREQUENCY_C0" opcode="0x00400000" value="1000000" />
+            </PerfLock>
+        </Level> -->
+    </PerformanceLevels>
+    <DefaultPerformanceConfig>
+        <sched_type name="AF_OUTPUT_FLAG_FAST" enabled="true" defaultLevel="SCHED_LEVEL_LOW" />
+        <sched_type name="AF_OUTPUT_FLAG_PRIMARY" enabled="true" defaultLevel="SCHED_LEVEL_LOW" />
+        <sched_type name="AF_OUTPUT_FLAG_DEEP_BUFFER" enabled="true" defaultLevel="SCHED_LEVEL_LOW" />
+        <sched_type name="AF_OUTPUT_FLAG_SPATIALIZER" enabled="true" defaultLevel="SCHED_LEVEL_LOW" />
+    </DefaultPerformanceConfig>
+    <HighPerformanceConfig>
+        <sched_type name="AF_OUTPUT_FLAG_FAST" enabled="true" defaultLevel="SCHED_LEVEL_HIGH" />
+        <sched_type name="AF_OUTPUT_FLAG_PRIMARY" enabled="true" defaultLevel="SCHED_LEVEL_HIGH" />
+        <sched_type name="AF_OUTPUT_FLAG_DEEP_BUFFER" enabled="true" defaultLevel="SCHED_LEVEL_HIGH" />
+        <sched_type name="AF_OUTPUT_FLAG_SPATIALIZER" enabled="true" defaultLevel="SCHED_LEVEL_HIGH" />
+    </HighPerformanceConfig>
+</audio_thread_sched>

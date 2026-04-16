@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WHITELIST version="COMMON_1.0">
+    <scenario scenarioName="Ultra_latency">
+        <package packageName="org.chromium.latency.walt"/>
+        <package packageName="org.kamrik.latency.walt"/>
+        <package packageName="com.phonetest.stresstest"/>
+    </scenario>
+    <scenario scenarioName="RecordScreenOff_Irq">
+        <package packageName="com.duowan.mobile"/>
+    </scenario>
+    <scenario scenarioName="BMS_lowlatency">
+        <package packageName="com.tencent.tmgp.sgame"/>
+    </scenario>
+    <scenario scenarioName="startoutput_failed">
+        <package packageName="com.luna.music"/>
+        <package packageName="com.xs.fm.lite"/>
+        <package packageName="com.joyai.musichaoting"/>
+        <package packageName="com.qfmwwjq.ycsswdt"/>
+        <package packageName="com.ss.android.ugc.aweme"/>
+        <package packageName="com.ss.android.ugc.aweme.lite"/>
+        <package packageName="com.ss.android.yumme.video"/>
+        <package packageName="com.ss.android.article.video"/>
+        <package packageName="com.lemon.lv"/>
+    </scenario>
+</WHITELIST>

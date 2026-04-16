@@ -1,0 +1,8 @@
+service vendor.keymint-strongbox /vendor/bin/hw/android.hardware.security.keymint-service.strongbox.nxp
+    class early_hal
+    user 2901
+
+capabilities SYS_ADMIN SYS_NICE WAKE_ALARM
+
+on property:ese_manager.status=running
+   stop vendor.keymint-strongbox

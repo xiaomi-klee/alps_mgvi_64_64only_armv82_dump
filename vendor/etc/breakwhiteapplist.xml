@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WHITELIST>
+<!--scence id 1 means the core application and activity  -->
+    <Scene id='1'>
+        <Package name="com.ss.android.ugc.aweme">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.smile.gifmaker">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.kuaishou.nebula">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.ss.android.ugc.aweme.lite">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.tencent.qqlive">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.qiyi.video">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.ss.android.article.video">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.taobao.live">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+         <Package name="com.youku.phone">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+         <Package name="com.ss.android.ugc.live">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.duowan.kiwi">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+         <Package name="air.tv.douyu.android">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.sup.android.superb">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.hunantv.imgo.activity">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.netflix.mediaclient">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="in.startv.hotstar.dplus">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.baidu.haokan">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="tv.danmaku.bili">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+    </Scene>
+
+<!--scence id 10  for  application and activity   enable touch boost-->
+   <Scene id='10'>
+        <Package name="cn.com.livelab">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.MobileTicket">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="cn.damai">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.sankuai.movie">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.showstartfans.activity">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.xunmeng.pinduoduo">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.koudai.weidian.buyer">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.taobao.taobao">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.jingdong.app.mall">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+        <Package name="com.moutai.mall">
+            <Activity name="Common">
+            </Activity>
+        </Package>
+    </Scene>
+</WHITELIST>

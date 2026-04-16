@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AudioPolicyFeature version="2025070101">
+    <SwitchVoipClient>
+        <Rule id="1" enabled="false">
+            <!-- 规则基本信息 -->
+            <Info>
+                <RuleName>sgame_voip</RuleName>
+                <Description>王者荣耀voip规则</Description>
+                <PackageName>com.tencent.tmgp.sgame</PackageName>
+            </Info>
+            <!-- 匹配条件 - 根据实际日志参数配置 -->
+            <MatchConditions>
+                <OutputName>com.tencent.tmgp.sgame</OutputName>  <!-- output packagename -->
+                <NameCompare>1</NameCompare>                     <!-- 启用name匹配 -->
+                <UidCompare>1</UidCompare>                       <!-- 启用uid匹配 -->
+                <OutputSampleRate>16000</OutputSampleRate>       <!-- output 采样率 -->
+                <OutputChannelMask>0x1</OutputChannelMask>       <!-- output 声道mask -->
+                <ruleName>sgame_voip</ruleName>
+            </MatchConditions>
+        </Rule>
+        <Rule id="2" enabled="true">
+            <!-- 规则基本信息 -->
+            <Info>
+                <RuleName>codev_voip</RuleName>
+                <Description>无畏契约voip规则</Description>
+                <PackageName>com.tencent.tmgp.codev</PackageName>
+            </Info>
+            <!-- 匹配条件 - 根据实际日志参数配置 -->
+            <MatchConditions>
+                <OutputName>com.tencent.tmgp.codev</OutputName>  <!-- output packagename -->
+                <NameCompare>1</NameCompare>                     <!-- 启用name匹配 -->
+                <UidCompare>1</UidCompare>                       <!-- 启用uid匹配 -->
+                <OutputSampleRate>16000</OutputSampleRate>       <!-- output 采样率 -->
+                <OutputChannelMask>0x1</OutputChannelMask>       <!-- output 声道mask -->
+                <ruleName>codev_voip</ruleName>
+            </MatchConditions>
+        </Rule>
+    </SwitchVoipClient>
+
+    <AudioTrackInputRules>
+        <Rule id="1" enabled="false">
+            <!-- 规则基本信息 -->
+            <Info>
+                <RuleName>sgame_voip</RuleName>
+                <Description>王者荣耀voip规则</Description>
+                <PackageName>com.tencent.tmgp.sgame</PackageName>
+            </Info>
+            <!-- 匹配条件 - 根据实际日志参数配置 -->
+            <MatchConditions>
+                <!-- attr结构体相关参数 -->
+                <AttrParams>
+                    <Usage>1</Usage>                    <!-- AUDIO_USAGE_MEDIA -->
+                    <ContentType>0</ContentType>        <!-- AUDIO_CONTENT_TYPE_UNKNOWN -->
+                </AttrParams>
+                <!-- config结构体相关参数 -->
+                <ConfigParams>
+                    <SampleRate>16000</SampleRate>      <!-- 16kHz采样率 -->
+                    <ChannelMask>0x1</ChannelMask>      <!-- AUDIO_CHANNEL_OUT_MONO -->
+                    <Format>1</Format>                  <!-- AUDIO_FORMAT_PCM_16_BIT -->
+                </ConfigParams>
+            </MatchConditions>
+            <!--修改操作-->
+            <ModifyActions>
+                <!-- attr结构体参数修改 -->
+                <AttrParams>
+                    <Usage>2</Usage>                    <!-- AUDIO_USAGE_VOICE_COMMUNICATION -->
+                </AttrParams>
+            </ModifyActions>
+        </Rule>
+		<Rule id="2" enabled="false">
+            <!-- 规则基本信息 -->
+            <Info>
+                <RuleName>codev_voip</RuleName>
+                <Description>无畏契约voip规则</Description>
+                <PackageName>com.tencent.tmgp.codev</PackageName>
+            </Info>
+            <!-- 匹配条件 - 根据实际日志参数配置 -->
+            <MatchConditions>
+                <!-- attr结构体相关参数 -->
+                <AttrParams>
+                    <Usage>1</Usage>                    <!-- AUDIO_USAGE_MEDIA -->
+                    <ContentType>0</ContentType>        <!-- AUDIO_CONTENT_TYPE_UNKNOWN -->
+                </AttrParams>
+                <!-- config结构体相关参数 -->
+                <ConfigParams>
+                    <SampleRate>16000</SampleRate>      <!-- 16kHz采样率 -->
+                    <ChannelMask>0x1</ChannelMask>      <!-- AUDIO_CHANNEL_OUT_MONO -->
+                    <Format>1</Format>                  <!-- AUDIO_FORMAT_PCM_16_BIT -->
+                </ConfigParams>
+            </MatchConditions>
+            <!--修改操作-->
+            <ModifyActions>
+                <!-- attr结构体参数修改 -->
+                <AttrParams>
+                    <Usage>2</Usage>                    <!-- AUDIO_USAGE_VOICE_COMMUNICATION -->
+                </AttrParams>
+            </ModifyActions>
+        </Rule>
+    </AudioTrackInputRules>
+
+    <OtherFeature>
+    </OtherFeature>
+
+    <GlobalConfig>
+        <EnableRuleEngine>true</EnableRuleEngine>
+    </GlobalConfig>
+</AudioPolicyFeature>

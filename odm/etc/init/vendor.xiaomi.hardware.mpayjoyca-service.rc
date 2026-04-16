@@ -1,0 +1,7 @@
+service vendor.mpayjoyca /odm/bin/payjoyca
+    class hal
+    user system
+    group system
+
+on property:vold.decrypt=trigger_restart_framework
+    start vendor.mpayjoyca

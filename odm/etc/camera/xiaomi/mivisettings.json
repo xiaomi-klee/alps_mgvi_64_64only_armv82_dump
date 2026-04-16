@@ -1,0 +1,14 @@
+{
+    "offlinedebugmask" : 0,
+    "Soc" : "MTK",
+    "SupportMDBokeh" : true,
+    "MialgoEnginePreviewThreadNum" : 12,
+    "MialgoEngineCaptureThreadNum" : 12,
+    "DefaultDoSync" : true,
+    "AppBugHunterWhiteList": [],
+    "AppBugHunterBlackList": [0, 1023200, 1002300, 1002301, 1001002, 1003903, 1002904, 1002905, 1002906, 1043200, 2031300, 2031009, 2031011, 2041300, 2041009, 2041011, 2011300, 2011009, 2011011, 2101011, 2101009, 2101300, 2111011, 2111009, 2111300],
+    "EnableInputParamValidCheck": false,
+    "MiviLogLevel": 5,
+    "MiviLogGroupsEnable": 0,
+    "MiviOfflineLogGroupsEnable": 0
+}

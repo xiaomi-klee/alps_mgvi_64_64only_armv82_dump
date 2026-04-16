@@ -1,0 +1,557 @@
+{
+    "supportSensorModeUp": true,
+    "supportCMDControl": false,
+    //sensorlist is roleid
+    "supportSensorlist": [0, 1, 21],
+    "Capability": {
+        "RoleIdRearWide": {
+            "0": ["BinningNormalMode", "Capture", "SuperEISVideo"],
+            "1": ["BinningNormalMode", "powerThirdApp"],
+            "2": ["BinningNormalMode", "NightVideo", "powerThirdApp"],
+            "3": ["BinningNormalMode"],
+            "4": ["BinningNormalMode"],
+            "5": ["InSensorZoomMode", "Capture"],
+            "6": ["BinningNormalMode"],
+            "7": ["BinningNormalMode"],
+            "8": ["Full50MHwRmscMode"],
+            "9": ["InSensorZoomQuadMode", "Capture"],
+            "10": ["BinningNormalMode"],
+            "11": ["BinningNormalMode", "MiMovie", "Video"],
+            "12": ["BinningLBMFMode", "MiMovie", "Video"],
+            "13": ["BinningNormalMode", "bokehmode1"],
+            "14": ["Full50MQuadMode"],
+            "15": ["InSensorZoomMode","MiMovie", "Video"],
+            "16": ["BinningNormalMode", "Video", "powerThirdApp"]
+        },
+        "RoleIdFront": {
+            "0": ["BinningNormalMode", "Capture"],
+            "1": ["BinningNormalMode", "powerThirdApp"],
+            "2": ["BinningNormalMode", "powerThirdApp"],
+            "3": ["BinningNormalMode"],
+            "4": ["BinningNormalMode"],
+            "5": ["BinningNormalMode", "BinningSHDRMode_MStream", "powerThirdApp"],
+            "6": ["BinningNormalMode", "AOV"],
+            "7": ["BinningNormalMode", "AOV"],
+            "8": ["BinningNormalMode", "AOV"]
+        },
+        "RoleIdRearUltra": {
+            "0": ["BinningNormalMode", "Capture", "SuperEISVideo"],
+            "1": ["BinningNormalMode", "powerThirdApp"],
+            "2": ["BinningNormalMode", "powerThirdApp"],
+            "3": ["BinningNormalMode", "bokehmode1"],
+            "4": ["BinningNormalMode", "Video"]
+            //"3": ["BinningNormalMode", "SuperEISVideo"]
+        }
+    },
+    "StreamFeature": {
+        "CapDefaultMdeo": 1,
+        "VideoDefaultMdeo": 2,
+        "RatioTolerance": 0.2,
+        "FpsTolerance": 0.3,
+        "RoleIdRearWide": {
+            "0x9002": {//0x9002 StreamConfigModeAlgoDualSAT sat 模式
+                "FeatureType": "Capture",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x800D": {//0x800D StreamConfigModeMiuiSUPEREISVideo 超级防抖
+                "FeatureType": "SuperEISVideo",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x8031": {//0x8031 StreamConfigModeMiuiVideoNight 夜景视频模式
+                "FeatureType": "NightVideo",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x8032": {//0x8032 StreamConfigModeMiuiCineModeWithBokeh 电影模式
+                "FeatureType": "MiMovie",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x800A": {//0x800A StreamConfigModeMiuiSuperNight 夜景模式
+                "FeatureType": "Capture",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x9008": {//0x9008 StreamConfigModeAlgoManual 专业模式
+                "FeatureType": "Capture",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x9007": {//0x9007 StreamConfigModeAlgoManualSuperHD 50M专业模式
+                "FeatureType": "Capture",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x900D": {//0x900D StreamConfigModeAlgoManualRaw 专业模式RAW
+                "FeatureType": "Capture",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x900E": {//0x900E StreamConfigModeAlgoManualHdRaw 50M专业模式RAW
+                "FeatureType": "Capture",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x8008": {//0x8008 StreamConfigModeMiuiPanorama 全景视频模式
+                "FeatureType": "Capture",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x8004": {//0x8004 StreamConfigModeMiuiVideo 视频模式 配置为16：10，通过vide tag配置
+                "FeatureType": "Video",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 1,
+                    "SizeSelect": 1,
+                    "RatioSelect": 1,
+                    "RawBitSelect": 0
+                }
+            },
+            "0x8019": {//0x8019 短信模式2x reconfig 为 8019
+                "FeatureType": "Video",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 1,
+                    "SizeSelect": 1,
+                    "RatioSelect": 1,
+                    "RawBitSelect": 0
+                }
+            },
+            "is_leica": {
+                "FeatureType": "LeiCa",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "is_3part": {
+                "FeatureType": "NULL",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 0,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "is_powerThirdApp": {
+                "FeatureType": "powerThirdApp",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 1,
+                    "SizeSelect": 1,
+                    "RatioSelect": 1,
+                    "RawBitSelect": 1
+                }
+            }
+        },
+        "RoleIdRearUltra": {
+            "is_leica": {
+                "FeatureType": "LeiCa",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x9002": {//0x9002 StreamConfigModeAlgoDualSAT sat 模式
+                "FeatureType": "Capture",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x8004": {//0x8004 StreamConfigModeMiuiVideo 视频模式 配置为16：10，通过vide tag配置
+                "FeatureType": "Video",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x8019": {//0x8019 短信模式2x reconfig 为 8019
+                "FeatureType": "Video",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x9008": {//0x9008 StreamConfigModeAlgoManual 专业模式
+                "FeatureType": "Capture",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x900D": {//0x900D StreamConfigModeAlgoManualRaw 专业模式RAW
+                "FeatureType": "Capture",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x800A": {//0x800A StreamConfigModeMiuiSuperNight 夜景模式
+                "FeatureType": "Capture",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x800D": {//0x800D StreamConfigModeMiuiSUPEREISVideo 超级防抖
+                "FeatureType": "SuperEISVideo",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x800F": {//0x800F StreamConfigModeMiuiSUPEREISPROVideo 超级防抖 pro
+                "FeatureType": "SuperEISVideo",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0xF010": {//0xF010 video 模式关闭防抖，
+                "FeatureType": "Video",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x8024": {//0xF010 video 模式关闭防抖，开启HDR10+
+                "FeatureType": "Video",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "is_3part": {
+                "FeatureType": "NULL",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 0,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "is_powerThirdApp": {
+                "FeatureType": "powerThirdApp",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 1,
+                    "SizeSelect": 1,
+                    "RatioSelect": 1,
+                    "RawBitSelect": 1
+                }
+            }
+        },
+        "RoleIdFront": {
+            "0x9005": {//0x800F StreamConfigModeMiuiSUPEREISPROVideo 超级防抖 pro
+                "FeatureType": "Capture",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x800A": {//0x800A StreamConfigModeMiuiSuperNight 夜景模式
+                "FeatureType": "Capture",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "0x9003": {//0x9003 前置人像拍照
+                "FeatureType": "Capture",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "is_3part": {
+                "FeatureType": "NULL",
+                "RawBit": 0,
+                "SelectInfo": {
+                    "FeatureSelect": 0,
+                    "FpsSelect": 0,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 1
+                }
+            },
+            "is_AOV": {
+                "FeatureType": "AOV",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 1,
+                    "SizeSelect": 0,
+                    "RatioSelect": 0,
+                    "RawBitSelect": 0
+                }
+            },
+            "is_powerThirdApp": {
+                "FeatureType": "powerThirdApp",
+                "RawBit": 10,
+                "SelectInfo": {
+                    "FeatureSelect": 1,
+                    "FpsSelect": 1,
+                    "SizeSelect": 1,
+                    "RatioSelect": 1,
+                    "RawBitSelect": 1
+                }
+            }
+        }
+    },
+    "BokehInfo": {
+        "RoleIdRearWide": {
+            "BokehFocal1X": {
+                "BokehModeKey": "bokehmode1",
+                "SensorModeTypeKey": "BinningNormalMode"
+            },
+            "BokehFocal1_5X": {
+                "BokehModeKey": "bokehmode1",
+                "SensorModeTypeKey": "BinningNormalMode"
+            }
+        },
+        "RoleIdRearUltra": {
+            "BokehFocal1X": {
+                "BokehModeKey": "bokehmode1",
+                "SensorModeTypeKey": "BinningNormalMode"
+            },
+            "BokehFocal1_5X": {
+                "BokehModeKey": "bokehmode1",
+                "SensorModeTypeKey": "BinningNormalMode"
+            }
+        }
+    },
+    "SeamlessGroup": {
+        // seamless group flow 驱动文件
+        "RoleIdRearWide": {
+            // 一个sensormode 只能在一个seamless group 中
+            // this for mtk, group id see mt6899/hal/inc/camera_custom_scenario_table_types.h
+            "300": [0, 5, 8, 9], // 1, 4, 10,
+            "302": [13],
+            "304": [1],
+            "310": [11, 12, 15],
+            "311": [16],
+            "316": [2],
+            "320": [6],
+            "321": [3]
+        },
+        "RoleIdFront": {
+            "300": [0],
+            "304": [1],
+            "310": [2],
+            "311": [5],
+            "320": [3],
+            "330": [6],
+            "331": [7],
+            "332": [8]
+        },
+        "RoleIdRearUltra": {
+            "300": [0],
+            "304": [1],
+            "302": [3],
+            "310": [4],//4
+            "316": [2]
+        }
+    },
+    "InSensorZoomData": {
+        "RoleIdRearWide": {
+            "IszSupportMode": [163, 162, 186],
+            "163":{
+                "IszMode": 0,
+                "InitRequestNum": 4,
+                "IszRatioTh": 2.0,
+                "ZoomRangeStart": 2.0,
+                "ZoomRangeEnd": 100.0,
+                "IszForceEn": 0,
+                "IszEnter": 390,
+                "IszExit": 420,
+                "IszForceExit": 3200
+            },
+            "162":{
+                "IszMode": 0,
+                "InitRequestNum": 4,
+                "IszRatioTh": 2.0,
+                "ZoomRangeStart": 2.0,
+                "ZoomRangeEnd": 100.0,
+                "IszForceEn": 0,
+                "IszEnter": 410,
+                "IszExit": 430,
+                "IszForceExit": 3200
+            },
+            "186":{
+                "IszMode": 0,
+                "InitRequestNum": 4,
+                "IszRatioTh": 2.0,
+                "ZoomRangeStart": 2.0,
+                "ZoomRangeEnd": 100.0,
+                "IszForceEn": 0,
+                "IszEnter": 390,
+                "IszExit": 420,
+                "IszForceExit": 3200
+            }
+        }
+    },
+    "HDRData": {
+        "RoleIdRearWide": {
+            "StaggerHDRCapSupportType": 0,
+            "DXGCapSupport": 1,
+            "VHDRType": 2,
+            "VHDRSupport60Fps": 0,
+            "VHDRSupportMode": {
+            // HDR_NONE = 0,
+            // HDR_MStream = 1,
+            // HDR_LBMF2exp = 2,
+            // HDR_LBMF3exp = 3,
+            // HDR_DOL2 = 4,
+            // HDR_DOL3 = 5,
+            // HDR_DCGTiming = 6,
+            // HDR_DCG12bit = 7,
+            // HDR_DCG14bit = 8,
+                "2": [162, 204]
+            }
+        }
+    },
+    "ThirdAppNameList": {
+        "1": "com.tencent.mm",
+        "2": "com.tencent.mobileqq",
+        "3": "air.tv.douyu.android",
+        "4": "com.duowan.kiwi",
+        "5": "com.huya.nimo",
+        "6": "com.smile.gifmaker",
+        "7": "com.kuaishou.nebula",
+        "8": "com.ss.android.ugc.aweme",
+        "9": "com.ss.android.ugc.aweme.lite",
+        "10": "com.alibaba.android.rimet",
+        "11": "com.tencent.meeting"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "SnapshotCapturePerfConfig": [
+        "0x00414000,1,                  // PERF_RES_CPUFREQ_PERF_MODE 1",
+        "0x00c00000,0,                  // PERF_RES_GPU_FREQ_MIN 0",
+        "0x01000000,0,                  // PERF_RES_DRAM_OPP_MIN 0",
+        "0x00400000,2100000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_0 2.1G",
+        "0x00404000,2100000,             // PERF_RES_CPUFREQ_MAX_CLUSTER_0 2.1G",
+        "0x00400100,3000000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_1 3.0G",
+        "0x00404100,3000000,             // PERF_RES_CPUFREQ_MAX_CLUSTER_1 3.0G",
+        "0x00400200,3200000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_2 3.2G",
+        "0x00404200,3200000,             // PERF_RES_CPUFREQ_MAX_CLUSTER_2 3.2G"
+    ],
+    "DSACWritePerfConfig": [
+        "0x00414000,1,                  // PERF_RES_CPUFREQ_PERF_MODE 1",
+        "0x00c00000,0,                  // PERF_RES_GPU_FREQ_MIN 0",
+        "0x01000000,0,                  // PERF_RES_DRAM_OPP_MIN 0",
+        "0x00400000,600000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_0 600M",
+        "0x00404000,1900000,            // PERF_RES_CPUFREQ_MAX_CLUSTER_0 1.9G",
+        "0x00400100,400000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_1 400M",
+        "0x00404100,2400000,            // PERF_RES_CPUFREQ_MAX_CLUSTER_1 2.4G",
+        "0x00400200,-1,                  // PERF_RES_CPUFREQ_MIN_CLUSTER_2 -1",
+        "0x00404200,-1,                  // PERF_RES_CPUFREQ_MAX_CLUSTER_2 -1"
+    ],
+    "thermal_level_config":
+    {
+        "thermal_level":[
+            38000,
+            40000,
+            45000
+        ],
+        "camera_boost_thermal_1":[
+            "0x00414000,1,                 // PERF_RES_CPUFREQ_PERF_MODE 1",
+            "0x00c00000,0,                 // PERF_RES_GPU_FREQ_MIN 0",
+            "0x01000000,0,                 // PERF_RES_DRAM_OPP_MIN 0",
+            "0x00400000,1800000,           // PERF_RES_CPUFREQ_MIN_CLUSTER_0 1.8G",
+            "0x00404000,1900000,           // PERF_RES_CPUFREQ_MAX_CLUSTER_0 1.9G",
+            "0x00400100,2600000,           // PERF_RES_CPUFREQ_MIN_CLUSTER_1 2.6G",
+            "0x00404100,2800000,           // PERF_RES_CPUFREQ_MAX_CLUSTER_1 2.8G",
+            "0x00400200,2800000,           // PERF_RES_CPUFREQ_MIN_CLUSTER_2 2.8G",
+            "0x00404200,3000000,           // PERF_RES_CPUFREQ_MAX_CLUSTER_2 3.0G"
+        ],
+        "camera_boost_thermal_2":[
+            "0x00414000,1,                  // PERF_RES_CPUFREQ_PERF_MODE 1",
+            "0x00c00000,0,                  // PERF_RES_GPU_FREQ_MIN 0",
+            "0x01000000,0,                  // PERF_RES_DRAM_OPP_MIN 0",
+            "0x00400000,600000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_0 600M",
+            "0x00404000,1700000,            // PERF_RES_CPUFREQ_MAX_CLUSTER_0 1.7G",
+            "0x00400100,600000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_1 600M",
+            "0x00404100,2400000,            // PERF_RES_CPUFREQ_MAX_CLUSTER_1 2.4G",
+            "0x00400200,600000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_2 600M",
+            "0x00404200,2700000,            // PERF_RES_CPUFREQ_MAX_CLUSTER_2 2.7G"
+        ],
+        "camera_boost_thermal_3":[
+            "0x00414000,1,                  // PERF_RES_CPUFREQ_PERF_MODE 1",
+            "0x00c00000,0,                  // PERF_RES_GPU_FREQ_MIN 0",
+            "0x01000000,0,                  // PERF_RES_DRAM_OPP_MIN 0",
+            "0x00400000,600000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_0 600M",
+            "0x00404000,1600000,            // PERF_RES_CPUFREQ_MAX_CLUSTER_0 1.6G",
+            "0x00400100,600000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_1 600M",
+            "0x00404100,2100000,            // PERF_RES_CPUFREQ_MAX_CLUSTER_1 2.1G",
+            "0x00400200,600000,             // PERF_RES_CPUFREQ_MIN_CLUSTER_2 600M",
+            "0x00404200,2600000,            // PERF_RES_CPUFREQ_MAX_CLUSTER_2 2.6G"
+        ]
+    }
+}

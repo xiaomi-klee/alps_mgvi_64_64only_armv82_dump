@@ -1,0 +1,24 @@
+{
+    /*  SAT fallback settings
+        Fallback support mask:
+            bit[0] is support W2UW or not,
+            bit[1] is support T2W or not,
+            bit[2] is support UT2W or not,
+            bit[3] is support UT2T or not.
+    */
+    "SatFallback": {
+        "satFallbackSwitch": 0
+    },
+    "enablePreviewFusion":0,
+    "isSupportBokehCapConfig": true,
+    "transitionZoomRatioLow": "0.6:1.0:2.0",
+    "supported3rdSat": true,
+    "supported3rdSatFallback": false,
+    "hwcapability": {
+        "isz": 2,
+        "ois": 4,
+        "periscope": 0
+    },
+    "startSwitchSensorFrameNums": 10,
+    "needStartSwitchSensorList": [4]
+}

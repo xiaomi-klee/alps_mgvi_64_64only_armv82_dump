@@ -1,0 +1,239 @@
+{
+    "com.mt.mtxx.mtxx": {
+        "name": "meituxiuxiu"
+    },
+    "com.fenbi.android.solar": {
+        "name": "xiaoyuansouti"
+    },
+    "com.dianping.v1": {
+        "name": "dazhongdianping"
+    },
+    "com.juanvision.EseeNetProj": {
+        "name": "yishiyun"
+    },
+    "com.mistong.ewt360": {
+        "name": "shenxue-e-wangtong"
+    },
+    "com.sankuai.meituan": {
+        "name": "meituan"
+    },
+    "cn.xiaochuankeji.tieba": {
+        "name": "zuiyou"
+    },
+    "com.eg.android.AlipayGphone": {
+        "name": "zhifubao"
+    },
+    "com.kwai.m2u": {
+        "name": "yitianxiangji"
+    },
+    "com.xunmeng.pinduoduo": {
+        "name": "pinduoduo"
+    },
+    "com.taobao.idlefish": {
+        "name": "xianyu"
+    },
+    "com.qiyi.video": {
+        "name": "aiqiyi"
+    },
+    "com.xingin.xhs": {
+        "name": "xiaohongshu"
+    },
+    "com.ss.android.auto": {
+        "name": "dongchedi"
+    },
+    "com.sina.weibo": {
+        "name": "weibo"
+    },
+    "tv.danmaku.bili": {
+        "name": "bilibili"
+    },
+    "com.wuba.zhuanzhuan": {
+        "name": "zhuanzhuan"
+    },
+    "com.mcdonalds.gma.cn": {
+        "name": "maidanglao"
+    },
+    "com.xt.retouch": {
+        "name": "xingtu"
+    },
+    "com.baidu.netdisk": {
+        "name": "baiduwangpan"
+    },
+    "com.tencent.mobileqq": {
+        "name": "qq"
+    },
+    "com.hunantv.imgo.activity": {
+        "name": "mangguo-tv"
+    },
+    "com.cat.readall": {
+        "name": "wukongliulanqi"
+    },
+    "air.tv.douyu.android": {
+        "name": "douyu"
+    },
+    "com.lemon.lv": {
+        "name": "jianying"
+    },
+    "com.sup.android.superb": {
+        "name": "pipixia"
+    },
+    "com.netease.edu.ucmooc": {
+        "name": "zhongguodaxue-mooc"
+    },
+    "com.videogo": {
+        "name": "yinshishiping"
+    },
+    "com.chaoge.athena_android": {
+        "name": "chaogejiaoyu"
+    },
+    "com.taobao.taobao": {
+        "name": "taobao"
+    },
+    "com.qh.tesla": {
+        "name": "qiaohuguanfang"
+    },
+    "com.tencent.mtt": {
+        "name": "qq-liulanqi"
+    },
+    "com.tencent.wework": {
+        "name": "weixin-gongzhonghao"
+    },
+    "com.taobao.trip": {
+        "name": "feizhu"
+    },
+    "com.alibaba.wireless": {
+        "name": "alibaba"
+    },
+    "com.ct.client": {
+        "name": "zhongguodianxin"
+    },
+    "com.tencent.qt.qtl": {
+        "name": "zhangshangyinxionglianmeng"
+    },
+    "com.baidu.tieba": {
+        "name": "baidutieba"
+    },
+    "me.ele": {
+        "name": "eleme"
+    },
+    "com.huayi.cme": {
+        "name": "zhangshanghuayi"
+    },
+    "com.edu24ol.newclass": {
+        "name": "huanqiuwangxiao"
+    },
+    "com.haixue.app.android.HaixueAcademy.h4": {
+        "name": "haixueketang"
+    },
+    "cn.soulapp.android": {
+        "name": "soul"
+    },
+    "com.hujiang.cctalk": {
+        "name": "CCtalk"
+    },
+    "com.llmm.huiyuanuxiang.p2": {
+        "name": "tuntunju"
+    },
+    "com.yikaobang.yixue": {
+        "name": "yikaobang"
+    },
+    "com.kugou.android.lite": {
+        "name": "kugougainianban"
+    },
+    "com.lianjia.beike": {
+        "name": "beikezhaofang"
+    },
+    "com.jjwxc.reader": {
+        "name": "jinjiangxiaoshuo"
+    },
+    "com.m4399.gamecenter": {
+        "name": "4399youxihe"
+    },
+    "com.hpbr.bosszhipin": {
+        "name": "bosszhipin"
+    },
+    "com.bilibili.comic": {
+        "name": "bilibili-manhua"
+    },
+    "com.iflytek.inputmethod": {
+        "name": "xunfeishurufa"
+    },
+    "com.netease.newsreader.activity": {
+        "name": "wangyi-xinwen"
+    },
+    "com.seetong.app.seetong": {
+        "name": "Seetong"
+    },
+    "com.cmri.universalapp": {
+        "name": "yidongaijia"
+    },
+    "com.baidu.searchbox.tomas": {
+        "name": "baidu-changtingban"
+    },
+    "com.zlketang.mm": {
+        "name": "zhiliaoketang"
+    },
+    "com.tencent.mm": {
+        "name": "weixin"
+    },
+    "com.mi.oa": {
+        "name": "xiaomiren"
+    },
+    "com.achievo.vipshop": {
+        "name": "weipinhui"
+    },
+    "com.lazada.android": {
+        "name": "lazada"
+    },
+    "com.duowan.kiwi": {
+        "name": "huyazhibo"
+    },
+    "com.duokan.reader": {
+        "name": "duokan"
+    },
+    "com.autonavi.minimap": {
+        "name": "gaodeditu"
+    },
+    "com.anjuke.android.app": {
+        "name": "anjuke"
+    },
+    "com.MobileTicket": {
+        "name": "tielu-12306"
+    },
+    "com.sohu.newsclient": {
+        "name": "souhuxinwen"
+    },
+    "com.jingdong.app.mall": {
+        "name": "jingdong"
+    },
+    "com.qiyi.video.lite": {
+        "name": "aiqiyi-jisuban"
+    },
+    "com.cctv.yangshipin.app.androidp": {
+        "name": "yangshipin"
+    },
+    "com.uedzen.autophoto": {
+        "name": "zizhuzhengjianzhao"
+    },
+    "com.jd.jdlite": {
+        "name": "jindongtejiaban"
+    },
+    "com.thestore.main": {
+        "name": "1-haohuiyuandian"
+    },
+    "com.youdao.dict": {
+        "name": "wangyiyoudaocidian"
+    },
+    "com.wawj.app.t": {
+        "name": "woaiwojia"
+    },
+    "com.kwai.videoeditor": {
+        "name": "kuaiyin"
+    },
+    "com.xingjiabi.shengsheng": {
+        "name": "taqu"
+    },
+    "com.taobao.litetao": {
+        "name": "taobaotejiaban"
+    }
+}

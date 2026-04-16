@@ -1,0 +1,40 @@
+on post-fs-data
+    mkdir /data/odm/mpbe 0770 system system
+
+on property:sys.boot_completed=1
+    setprop vendor.mi.mpbe.stop 0
+    setprop vendor.mi.mpbe.mode 2
+    setprop vendor.mi.mpbe.perf.mode 0
+    setprop vendor.mi.mpbe.test 0
+    setprop vendor.mi.mpbe.smartgc.count 5
+    setprop persist.vendor.mi.mpbe.smartgc.enable 1
+    chmod 775 /proc/mpbe/ctrl
+    start mpbe
+
+service mpbe /odm/bin/mpbe_service
+    class main
+    user root
+    group system
+    seclabel u:r:mpbe:s0
+    capabilities DAC_OVERRIDE DAC_READ_SEARCH FOWNER CHOWN
+    disabled
+
+on property:vendor.mi.mpbe.stop=1
+    write /proc/mpbe/ctrl 0
+    stop mpbe
+
+on property:vendor.mi.mpbe.stop=0
+    write /proc/mpbe/ctrl 1
+    start mpbe
+
+on property:vendor.mi.mpbe.mode=1
+    write /proc/mpbe/ctrl 6
+    write /proc/mpbe/ctrl 0
+    write /proc/mpbe/ctrl 1
+    restart mpbe
+
+on property:vendor.mi.mpbe.mode=2
+    write /proc/mpbe/ctrl 7
+    write /proc/mpbe/ctrl 0
+    write /proc/mpbe/ctrl 1
+    restart mpbe

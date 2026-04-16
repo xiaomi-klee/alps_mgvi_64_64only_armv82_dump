@@ -1,0 +1,210 @@
+{
+    "PipelineName": "TPRearSimpleVideo",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.misat",
+                "NodeInstance": "MiSatInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.mihisv2",
+                "NodeInstance": "HISV2Instance1",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwhalproc",
+                "NodeInstance": "VSEWARPMCNRInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 32896
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.facebeautypreview",
+                "NodeInstance": "faceBeautyInstance0"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.ldcpreview",
+                "NodeInstance": "ldcPreviewInstance0"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.pixman",
+                "NodeInstance": "RemotePreviewInstance",
+                "NodeProperty": [
+                  {
+                       "NodePropertyName": "pluginMode",
+                       "NodePropertyValue": 0,
+                       "__comment__": "STREAM_USE_CASE_PREVIEW"
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.GestureEffects",
+                "NodeInstance": "GestureEffectsInstance0"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwhalproc",
+                "NodeInstance": "WPEPQInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 32896
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwjpeg",
+                "NodeInstance": "JpegInstance"
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiSatInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SourceBuffer1"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "MiSatInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiSatInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISV2Instance1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISV2Instance1"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEWARPMCNRInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEWARPMCNRInstance0",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "ldcPreviewInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "ldcPreviewInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "faceBeautyInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "faceBeautyInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GestureEffectsInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GestureEffectsInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "RemotePreviewInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "RemotePreviewInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WPEPQInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WPEPQInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "WPEPQInstance0"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SinkBuffer1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "WPEPQInstance0"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "JpegInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "JpegInstance",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "SinkBuffer2"
+                }
+            }
+        ]
+    }
+}

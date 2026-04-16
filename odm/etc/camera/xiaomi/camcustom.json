@@ -1,0 +1,10 @@
+{
+    "AutoTrigger":[
+        "com.google.android.googlequicksearchbox",
+        "com.tencent.wework",
+        "tv.danmaku.bili",
+        "com.sankuai.meituan",
+        "com.whatsapp",
+        "com.eg.android.AlipayGphone"
+    ]
+}

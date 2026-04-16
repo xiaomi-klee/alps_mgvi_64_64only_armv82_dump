@@ -1,0 +1,46 @@
+{
+    "CameraIdList": {
+        "CameraId": [
+            {
+                //CameraId:rear wide
+                "PhysicalId": 0,
+                "AispSensorModeInfoMap":[
+                    {
+                        //aisp sensor mode: binning
+                        "aispSensorMode": 0,
+                        "SensorModeList": [0,1,4,10,13]
+                    },
+                    {
+                        //aisp sensor mode: quad(12.5M)
+                        "aispSensorMode": 15,
+                        "isInSensorZoom": 1,
+                        "SensorModeList": [9]
+                    },
+                    {
+                        //aisp sensor mode: HW remosaic(ISZ-remosaic)
+                        "aispSensorMode": 7,
+                        "isInSensorZoom": 1,
+                        "SensorModeList": [5,8]
+                    },
+                    {
+                        //aisp sensor mode: quad(50M)
+                        "aispSensorMode": 4,
+                        "qcfaFactor": 2,
+                        "SensorModeList": [14]
+                    }
+                ]
+            },
+            {
+                //CameraId:rear ultra
+                "PhysicalId": 21,
+                "AispSensorModeInfoMap":[
+                    {
+                        //aisp sensor mode: binning
+                        "aispSensorMode": 0,
+                        "SensorModeList": [0,1]
+                    }
+                ]
+            }
+        ]
+    }
+}

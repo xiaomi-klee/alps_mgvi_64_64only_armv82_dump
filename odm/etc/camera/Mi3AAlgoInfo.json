@@ -1,0 +1,24 @@
+{
+    "product": "klee",
+    "Mi3AAlgoRearEnable": {
+        "AE":  false,
+        "AWB": true,
+        "AF":  true,
+        "PD":  false,
+        "LSC":  true
+    },
+    "Mi3AAlgoFrontEnable": {
+        "AE":  false,
+        "AWB": false,
+        "AF":  false,
+        "PD":  false,
+        "LSC":  false
+    },
+    "Mi3AExifConfig":{
+        "DebugExifEnable": false,
+        "AEExifBytes":     1228800,
+        "AWBExifBytes":    500000,
+        "AFExifBytes":     204800,
+        "LSCExifBytes":    204800
+    }
+}

@@ -1,0 +1,93 @@
+/*
+0：    //前置拍照
+1：    //后置拍照
+2：    //前置人像
+3：    //后置人像
+4：    //前置夜景
+5：    //前置录像
+6：    // 后置录像
+7：    // 前置AI水印
+8：    //后置AI水印
+9：    //前后双景
+10:    // 微信美颜
+13:    //前置短视频
+14：   //后置短视频
+15:    //后置美型
+*/
+{
+    "resourcePath":"/odm/etc/camera/beauty/resources/",
+    "ConfigParam":
+    {
+        "0":  {
+            "ConfigJson": "render/Effect/effect_mode_native.json"	,
+            "snapshotConfigJson": "/odm/etc/camera/beauty/resources/truesight_config_native.json",
+            "BeautyMode": 1
+        },
+        "1":{
+            "ConfigJson": "render/Effect/effect_mode_rear_other.json"	,
+            "snapshotConfigJson": "/odm/etc/camera/beauty/resources/truesight_config_rear_other.json",
+            "BeautyMode": 4
+        },
+        "2": {
+            "ConfigJson": "render/Effect/effect_mode_native.json",
+            "snapshotConfigJson": "/odm/etc/camera/beauty/resources/truesight_config_native.json",
+            "BeautyMode": 1
+        },
+        "3": {
+            "ConfigJson": "render/Effect/effect_mode_rear_vivid_retouch.json",
+            "snapshotConfigJson": "/odm/etc/camera/beauty/resources/truesight_config_rear_vivid_retouch.json",
+            "BeautyMode": 6
+        },
+        "4": {
+            "ConfigJson": "render/Effect/effect_mode_native.json"	,
+            "snapshotConfigJson": "/odm/etc/camera/beauty/resources/truesight_config_native.json",
+            "BeautyMode": 1
+        },
+        "5": {
+            "ConfigJson": "render/Effect/effect_mode_front_video.json"	,
+            "snapshotConfigJson":"",
+            "BeautyMode": 7
+        },
+        "6": {
+            "ConfigJson": "render/Effect/effect_mode_rear_other.json"	,
+            "snapshotConfigJson":"",
+            "BeautyMode": 4
+        },
+        "7": {
+            "ConfigJson": "render/Effect/effect_mode_front_other.json"	,
+            "snapshotConfigJson": "/odm/etc/camera/beauty/resources/truesight_config_front_other.json",
+            "BeautyMode": 3
+        },
+        "8": {
+            "ConfigJson": "render/Effect/effect_mode_front_other.json"	,
+            "snapshotConfigJson": "/odm/etc/camera/beauty/resources/truesight_config_rear_other.json",
+            "BeautyMode": 3
+        
+        },
+        "9": {
+            "ConfigJson": "render/Effect/effect_mode_front_other.json"	,
+            "snapshotConfigJson":"",
+            "BeautyMode": 4
+        },
+        "10": {
+            "ConfigJson": "render/Effect/effect_mode_front_other.json"	,
+            "snapshotConfigJson":"",
+            "BeautyMode": 1
+        },
+        "13": {
+            "ConfigJson": "render/Effect/effect_mode_front_other.json"	,
+            "snapshotConfigJson":"",
+            "BeautyMode": 3
+        },
+        "14": {
+            "ConfigJson": "render/Effect/effect_mode_rear_other.json"	,
+            "snapshotConfigJson":"",
+            "BeautyMode": 4
+        },
+         "15": {
+           "ConfigJson": "render/Effect/effect_mode_rear_vivid_reshape.json",
+           "snapshotConfigJson": "/odm/etc/camera/beauty/resources/truesight_config_rear_vivid_reshape.json",
+            "BeautyMode": 6
+        }
+    }
+}

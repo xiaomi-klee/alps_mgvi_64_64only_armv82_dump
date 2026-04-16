@@ -1,0 +1,278 @@
+{
+    "PipelineName": "LongExposure",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.arcsoftPT",
+                "NodeInstance": "ArcsoftPTInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.swflip",
+                "NodeInstance": "SwflipInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwhalproc",
+                "NodeInstance": "VSEMCNRInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 32768
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.asd",
+                "NodeInstance": "AsdInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "Raw2YuvInstance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 4
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "Raw2YuvInstance1"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.watermark",
+                "NodeInstance": "WatermarkInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 128
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.swjpegencode",
+                "NodeInstance": "swjpegInstance1",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 2048
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.jpegrAggr",
+                "NodeInstance": "jpegrAggrInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwjpeg",
+                "NodeInstance": "JpegInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwjpeg",
+                "NodeInstance": "JpegInstance1"
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AsdInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AsdInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEMCNRInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEMCNRInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "AsdInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "ArcsoftPTInstance",
+                    "PortFormat": "RAW16"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "ArcsoftPTInstance",
+                    "PortFormat": "RAW16"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Raw2YuvInstance",
+                    "PortFormat": "RAW16"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Raw2YuvInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBufferFinalPrev"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "ArcsoftPTInstance",
+                    "PortFormat": "RAW16"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "Raw2YuvInstance1",
+                    "PortFormat": "RAW16"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "Raw2YuvInstance1",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SwflipInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SwflipInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WatermarkInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "WatermarkInstance0"
+                },
+                "DstPort": {
+                    "PortId": 3,
+                    "NodeInstance": "jpegrAggrInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 3,
+                    "NodeInstance": "WatermarkInstance0"
+                },
+                "DstPort": {
+                    "PortId": 4,
+                    "NodeInstance": "jpegrAggrInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 5,
+                    "NodeInstance": "WatermarkInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance1",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance1",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 8,
+                    "NodeInstance": "jpegrAggrInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "WatermarkInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "swjpegInstance1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "swjpegInstance1",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "jpegrAggrInstance",
+                    "PortFormat": "BLOB"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WatermarkInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance",
+                    "PortFormat": "YUV420_NV21"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "jpegrAggrInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "jpegrAggrInstance",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SinkBufferFinalPic"
+                }
+            }
+        ]
+    }
+}

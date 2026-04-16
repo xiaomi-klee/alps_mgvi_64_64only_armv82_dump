@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MIUI ADD: Modem_ModemEnhance -->
+<MESubFeatureConfig>
+    <!--cn -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="klee">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="CN" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <!-- UAC -->
+        <feature feature_id="1"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <!-- UL Imbalance -->
+        <feature feature_id="2"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <!-- T1 -->
+        <feature feature_id="3"  hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <!-- SmartUplink -->
+        <feature feature_id="4"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <GestureModeMapConfigBitMask bitMask="31" />
+        <NWCoexistMapConfig>
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="1"  gps="255" wififrequency="-1" outMode="1"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="1"  gps="255" wififrequency="-1" outMode="1"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="1"  gps="255" wififrequency="-1" outMode="1"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="1"  gps="255" wififrequency="-1" outMode="1"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="0"  gps="255" wififrequency="-1" outMode="2"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="0"  gps="255" wififrequency="-1" outMode="2"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="0"  gps="255" wififrequency="-1" outMode="3"/>
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="0"  gps="255" wififrequency="-1" outMode="1"/>
+
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="1"  gps="255" wififrequency="0" outMode="4"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="1"  gps="255" wififrequency="0" outMode="4"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="1"  gps="255" wififrequency="0" outMode="4"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="1"  gps="255" wififrequency="0" outMode="4"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="0"  gps="255" wififrequency="0" outMode="5"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="0"  gps="255" wififrequency="0" outMode="5"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="0"  gps="255" wififrequency="0" outMode="6"/>
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="0"  gps="255" wififrequency="0" outMode="4"/>
+
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="1"  gps="255" wififrequency="1" outMode="1"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="1"  gps="255" wififrequency="1" outMode="1"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="1"  gps="255" wififrequency="1" outMode="1"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="1"  gps="255" wififrequency="1" outMode="1"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="0"  gps="255" wififrequency="1" outMode="2"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="0"  gps="255" wififrequency="1" outMode="2"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="0"  gps="255" wififrequency="1" outMode="3"/>
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="0"  gps="255" wififrequency="1" outMode="1"/>
+
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="1"  gps="255" wififrequency="2" outMode="7"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="1"  gps="255" wififrequency="2" outMode="7"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="1"  gps="255" wififrequency="2" outMode="7"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="1"  gps="255" wififrequency="2" outMode="7"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="0"  gps="255" wififrequency="2" outMode="8"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="0"  gps="255" wififrequency="2" outMode="8"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="0"  gps="255" wififrequency="2" outMode="9"/>
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="0"  gps="255" wififrequency="2" outMode="7"/>
+
+            <NWCoexistMapItem bt="255"  wifi="255"   sigweak="255"  gps="255" wififrequency="255" outMode="1"/>
+        </NWCoexistMapConfig>
+        <NWCoexistControlMapConfig>
+             <NWCoexistControlMapItem  mode="-1" outGPIO0="0"    outGPIO1="0"    outGPIO2="1"    outGPIO3="1"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+
+             <NWCoexistControlMapItem  mode="1" outGPIO0="0"    outGPIO1="0"    outGPIO2="1"    outGPIO3="1"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+             <NWCoexistControlMapItem  mode="2" outGPIO0="0"    outGPIO1="1"    outGPIO2="1"    outGPIO3="1"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+             <NWCoexistControlMapItem  mode="3" outGPIO0="1"    outGPIO1="0"    outGPIO2="1"    outGPIO3="1"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+
+             <NWCoexistControlMapItem  mode="4" outGPIO0="0"    outGPIO1="0"    outGPIO2="0"    outGPIO3="1"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+             <NWCoexistControlMapItem  mode="5" outGPIO0="0"    outGPIO1="1"    outGPIO2="0"    outGPIO3="1"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+             <NWCoexistControlMapItem  mode="6" outGPIO0="1"    outGPIO1="0"    outGPIO2="0"    outGPIO3="1"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+
+             <NWCoexistControlMapItem  mode="7" outGPIO0="0"    outGPIO1="0"    outGPIO2="1"    outGPIO3="0"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+             <NWCoexistControlMapItem  mode="8" outGPIO0="0"    outGPIO1="1"    outGPIO2="1"    outGPIO3="0"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+             <NWCoexistControlMapItem  mode="9" outGPIO0="1"    outGPIO1="0"    outGPIO2="1"    outGPIO3="0"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+        </NWCoexistControlMapConfig>
+    </deviceConfig>
+
+    <deviceConfig device_name="klee">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="GL" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <!-- UAC -->
+        <feature feature_id="1"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <!-- UL Imbalance -->
+        <feature feature_id="2"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <!-- T1 -->
+        <feature feature_id="3"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <!-- SmartUplink -->
+        <feature feature_id="4"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <GestureModeMapConfigBitMask bitMask="31" />
+        <NWCoexistMapConfig>
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="1"  gps="255" wififrequency="255" outMode="1"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="1"  gps="255" wififrequency="255" outMode="1"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="1"  gps="255" wififrequency="255" outMode="1"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="1"  gps="255" wififrequency="255" outMode="1"/>
+
+            <NWCoexistMapItem bt="0"  wifi="0"   sigweak="0"  gps="255" wififrequency="255" outMode="1"/>
+            <NWCoexistMapItem bt="0"  wifi="1"   sigweak="0"  gps="255" wififrequency="255" outMode="2"/>
+            <NWCoexistMapItem bt="1"  wifi="0"   sigweak="0"  gps="255" wififrequency="255" outMode="2"/>
+            <NWCoexistMapItem bt="1"  wifi="1"   sigweak="0"  gps="255" wififrequency="255" outMode="2"/>
+
+            <NWCoexistMapItem bt="255"  wifi="255"   sigweak="255"  gps="255" wififrequency="255" outMode="1"/>
+        </NWCoexistMapConfig>
+        <NWCoexistControlMapConfig>
+             <NWCoexistControlMapItem  mode="-1" outGPIO0="0"    outGPIO1="0"    outGPIO2="255"    outGPIO3="255"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+
+             <NWCoexistControlMapItem  mode="1" outGPIO0="0"    outGPIO1="0"    outGPIO2="255"    outGPIO3="255"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+             <NWCoexistControlMapItem  mode="2" outGPIO0="1"    outGPIO1="0"    outGPIO2="255"    outGPIO3="255"    outGPIO4="255"    outGPIO5="255"    outGPIO6="255"/>
+        </NWCoexistControlMapConfig>
+    </deviceConfig>
+
+    <!--default -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="klee">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="default" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1"  hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="17" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+    </deviceConfig>
+
+</MESubFeatureConfig>
+<!-- END Modem_ModemEnhance -->

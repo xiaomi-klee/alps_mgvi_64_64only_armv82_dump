@@ -1,0 +1,89 @@
+{
+    "Description": "Xiaomi SmartAE config file - AINR_evlist",
+    "phone_code": "P10",
+    "jsonVersion": "Agre_V2.0-20250722",
+
+    "QUICKSHOT_CHECK": {
+        "CHANGE_ALGO": {
+            "counts": 1,
+            "CONDITIONS": null
+        },
+        "CHANGE_CAPTURE_MODE": {
+            "hard_change": true,
+            "ev_index": null,
+            "counts": null,
+            "CONDITIONS": null
+        },
+        "CHANGE_FRAMES": null,
+        "CHANGE_SENSOR": null
+
+    },
+
+    "AlgoType_AINR": {
+        "CHECKER": {
+            "UW": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": [
+                    {
+                        "condition": "sensor_mode",
+                        "operator": "=",
+                        "value": [ 1 ]
+                    }
+                ]
+
+            },
+            "WIDE": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": [
+                    {
+                        "condition": "sensor_mode",
+                        "operator": "=",
+                        "value": [ 1 ]
+                    }
+                ]
+            },
+            "TELE": {
+                "Description": "EV list",
+                "counts": 1,
+                "ev_index": [ 0 ],
+                "CONDITIONS": [
+                    {
+                        "condition": "sensor_mode",
+                        "operator": "=",
+                        "value": [ 1 ]
+                    }
+                ]
+            }
+        },
+        "LIST": [
+            {
+                "Description": "V_0",
+                "frames": 6,
+                "ev_value": [ 0, 0, 0, 0, 0, 0 ],
+                "capture_mode": [ 0, 0, 0, 0, 0, 0 ],
+                "adrc_on": [ 1, 1, 1, 1, 1, 1 ],
+                "sensor_mode": [ 0, 0, 0, 0, 0, 0 ],
+                "motion_exp_type": [ -1, -1, -1, -1, -1, -1 ],
+                "min_exp_check": false,
+                "change_to_index": null
+            }
+        ]
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

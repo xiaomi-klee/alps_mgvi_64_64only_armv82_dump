@@ -1,0 +1,14 @@
+# missi-user 16 BP2A.250605.031.A3 OS3.0.4.0.WPJMIXM release-keys
+- manufacturer: alps
+- platform: common
+- codename: mgvi_64_64only_armv82
+- flavor: missi-user
+- release: 16
+- id: BP2A.250605.031.A3
+- incremental: OS3.0.4.0.WPJMIXM
+- tags: release-keys
+- fingerprint: POCO/klee_tr/klee:15/AP3A.240905.015.A2/OS3.0.4.0.WPJMIXM:user/release-keys
+- is_ab: true
+- brand: alps
+- branch: missi-user-16-BP2A.250605.031.A3-OS3.0.4.0.WPJMIXM-release-keys
+- repo: alps_mgvi_64_64only_armv82_dump

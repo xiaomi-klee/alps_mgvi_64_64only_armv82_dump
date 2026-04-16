@@ -1,0 +1,11 @@
+# Soft dependencies extracted from modules themselves.
+softdep mali_kbase_mt6899_r49 pre: memory_group_manager
+softdep slbc_mt6899 pre: emi-slb.ko
+softdep slbc_mt6899 pre: slc-parity.ko
+softdep slbc_mt6899 pre: tinysys-scmi.ko
+softdep mtk_sec_heap pre: apusys
+softdep sspm_v3 pre: tinysys-scmi.ko
+softdep mtk_cm_mgr_mt6899 pre: thermal_interface.ko
+softdep audio_ipi pre: adsp-v2
+softdep gz_tz_system pre: gz_virtio_mod.ko
+softdep gz_tz_system pre: gz_irq_mod.ko

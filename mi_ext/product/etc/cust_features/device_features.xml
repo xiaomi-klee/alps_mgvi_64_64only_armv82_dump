@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cust_features>
+    <cust_feature>
+        <integer name="embedded_tf_boost_value">0</integer>
+        <bool name="gnss_enhance_interface_version3">true</bool>
+        <bool name="thermal_cgame_qq_intent_enabled">true</bool>
+        <bool name="thermal_cgame_wechat_intent_enabled">true</bool>
+        <bool name="thermal_special_c_scenario_not_yuanshen_enabled">true</bool>
+        <bool name="thermal_special_c_scenario_not_sgame_enabled">true</bool>
+        <bool name="persist.vendor.bluetooth.voip.hangup.disabled">true</bool>
+        <bool name="persist.vendor.bluetooth.lhdc.v5.supported">true</bool>
+        <bool name="persist.vendor.bluetooth.offload.lhdc.supported">true</bool>
+        <bool name="support_tp_mqs_report_once_a_day">true</bool>
+        <bool name="support_tp_mqs_gl_report">true</bool>
+        <bool name="common_reverse_charge">true</bool>
+        <string-array name="miui_mtk_perf_boost_config">
+            <item>0x00c0c200</item>
+            <item>18743356</item>
+            <item>0x00c0c300</item>
+            <item>771</item>
+            <item>0x01404100</item>
+            <item>1</item>
+            <item>0x01404300</item>
+            <item>0</item>
+            <item>0x01404400</item>
+            <item>1</item>
+        </string-array>
+        <bool name="support_three_party_lea">true</bool>
+        <bool name="support_audio_share_ui">true</bool>
+        <bool name="powerkeeper_ExtremeScenarioAware">true</bool>
+        <bool name="support_virtual_call">true</bool>
+        <bool name="support_modem_log_upload_bool">true</bool>
+        <integer name="config_wifi_sar_pattern">8</integer>
+        <bool name="config_supported_aon_devices">true</bool>
+        <bool name="input_scroller_optimization_normal_support">true</bool>
+    </cust_feature>
+</cust_features>
